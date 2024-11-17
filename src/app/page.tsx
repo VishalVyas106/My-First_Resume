@@ -9,6 +9,7 @@ import {  FaExternalLinkAlt, FaTools } from 'react-icons/fa';
 // import { IoAdd } from 'react-icons/io5';
 import { IoAdd } from 'react-icons/io5';
 import { BsCode } from 'react-icons/bs';
+import Image from "next/image";
 
 const Resume = () => {
   const projects = [
@@ -44,7 +45,7 @@ const Resume = () => {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Column - Image and Title */}
         <div className="relative">
-          <img 
+          <Image
             src="me2.jpg"
             alt="Profile" 
             className="w-full h-[300px] object-cover rounded-lg"
@@ -85,8 +86,10 @@ const Resume = () => {
               <h3 className="uppercase tracking-wider">About Me</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-            Hi, I'm Vyas Vishal, a Full Stack Software Engineer with extensive experience in developing and deploying end-to-end web applications. I've built numerous full-stack applications that address real-life problems and are actively used by real-world users. With strong expertise in full-stack development, I have successfully deployed multiple applications on the cloud. While I am a fresher, my hands-on experience in building impactful projects demonstrates my ability to deliver practical and efficient solutions.
-            </p>
+            <p>
+  Hi, I&apos;m Vyas Vishal, a Full Stack Software Engineer with extensive experience in developing and deploying end-to-end web applications. I&apos;ve built numerous full-stack applications that address real-life problems and are actively used by real-world users. With strong expertise in full-stack development, I have successfully deployed multiple applications on the cloud. While I am a fresher, my hands-on experience in building impactful projects demonstrates my ability to deliver practical and efficient solutions.
+</p>
+</p>
           </div>
         </div>
 
@@ -147,7 +150,7 @@ const Resume = () => {
             key={index}
             className="border-2 border-gray-800 rounded-lg overflow-hidden transition-transform "
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
